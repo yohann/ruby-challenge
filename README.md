@@ -19,10 +19,10 @@ The API must have the following features:
 
 
 ## Technical Guidelines
-ROR
-MySQL or PostgreSQL
-REST
-JSON
+* ROR
+* MySQL or PostgreSQL
+* REST
+* JSON
 
 
 ## About the documentation
