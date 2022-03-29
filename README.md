@@ -1,5 +1,6 @@
 # B2B STACK - Developer Ruby Backend
 
+## Fork this repository, complete challenge, submit pull request and provide product preview URL.
 
 ## Project Guidelines
 Create an API that allows users to manage their TO-DO list
