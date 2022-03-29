@@ -1,2 +1,1 @@
-# ruby-challenge
-Developer Challenge for Ruby Backend
+# B2B STACK - Developer Ruby Backend
