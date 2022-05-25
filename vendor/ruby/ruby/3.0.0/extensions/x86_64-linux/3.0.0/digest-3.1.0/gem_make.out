@@ -1,0 +1,18 @@
+current directory: /home/yohann/tests/ruby-challenge/vendor/ruby/ruby/3.0.0/gems/digest-3.1.0/ext/digest/sha2
+/home/yohann/.rbenv/versions/3.0.0/bin/ruby -I /home/yohann/.rbenv/versions/3.0.0/lib/ruby/site_ruby/3.0.0 -r ./siteconf20220525-317022-a8zt1k.rb extconf.rb
+checking for u_int8_t... yes
+checking for sys/cdefs.h... yes
+creating Makefile
+
+current directory: /home/yohann/tests/ruby-challenge/vendor/ruby/ruby/3.0.0/gems/digest-3.1.0/ext/digest/sha2
+make DESTDIR\= clean
+
+current directory: /home/yohann/tests/ruby-challenge/vendor/ruby/ruby/3.0.0/gems/digest-3.1.0/ext/digest/sha2
+make DESTDIR\=
+compiling sha2init.c
+compiling sha2.c
+linking shared-object digest/sha2.so
+
+current directory: /home/yohann/tests/ruby-challenge/vendor/ruby/ruby/3.0.0/gems/digest-3.1.0/ext/digest/sha2
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 sha2.so ./.gem.20220525-317022-lrnn57/digest

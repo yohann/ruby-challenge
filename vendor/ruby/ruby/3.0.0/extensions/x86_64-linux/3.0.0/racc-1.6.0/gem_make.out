@@ -1,0 +1,17 @@
+current directory: /home/yohann/tests/ruby-challenge/vendor/ruby/ruby/3.0.0/gems/racc-1.6.0/ext/racc/cparse
+/home/yohann/.rbenv/versions/3.0.0/bin/ruby -I /home/yohann/.rbenv/versions/3.0.0/lib/ruby/site_ruby/3.0.0 -r ./siteconf20220525-317022-6emntn.rb extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /home/yohann/tests/ruby-challenge/vendor/ruby/ruby/3.0.0/gems/racc-1.6.0/ext/racc/cparse
+make DESTDIR\= clean
+
+current directory: /home/yohann/tests/ruby-challenge/vendor/ruby/ruby/3.0.0/gems/racc-1.6.0/ext/racc/cparse
+make DESTDIR\=
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/yohann/tests/ruby-challenge/vendor/ruby/ruby/3.0.0/gems/racc-1.6.0/ext/racc/cparse
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20220525-317022-soh2c9/racc

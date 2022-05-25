@@ -1,0 +1,15 @@
+current directory: /home/yohann/tests/ruby-challenge/vendor/ruby/ruby/3.0.0/gems/bootsnap-1.11.1/ext/bootsnap
+/home/yohann/.rbenv/versions/3.0.0/bin/ruby -I /home/yohann/.rbenv/versions/3.0.0/lib/ruby/site_ruby/3.0.0 -r ./siteconf20220525-317022-e7j95y.rb extconf.rb
+creating Makefile
+
+current directory: /home/yohann/tests/ruby-challenge/vendor/ruby/ruby/3.0.0/gems/bootsnap-1.11.1/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /home/yohann/tests/ruby-challenge/vendor/ruby/ruby/3.0.0/gems/bootsnap-1.11.1/ext/bootsnap
+make DESTDIR\=
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/yohann/tests/ruby-challenge/vendor/ruby/ruby/3.0.0/gems/bootsnap-1.11.1/ext/bootsnap
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20220525-317022-cdkz2h/bootsnap

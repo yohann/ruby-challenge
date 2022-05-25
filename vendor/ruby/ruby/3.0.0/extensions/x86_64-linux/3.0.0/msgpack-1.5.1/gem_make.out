@@ -1,0 +1,29 @@
+current directory: /home/yohann/tests/ruby-challenge/vendor/ruby/ruby/3.0.0/gems/msgpack-1.5.1/ext/msgpack
+/home/yohann/.rbenv/versions/3.0.0/bin/ruby -I /home/yohann/.rbenv/versions/3.0.0/lib/ruby/site_ruby/3.0.0 -r ./siteconf20220525-317022-kudjtn.rb extconf.rb
+checking for ruby/st.h... yes
+checking for st.h... no
+checking for rb_enc_interned_str() in ruby.h... yes
+creating Makefile
+
+current directory: /home/yohann/tests/ruby-challenge/vendor/ruby/ruby/3.0.0/gems/msgpack-1.5.1/ext/msgpack
+make DESTDIR\= clean
+
+current directory: /home/yohann/tests/ruby-challenge/vendor/ruby/ruby/3.0.0/gems/msgpack-1.5.1/ext/msgpack
+make DESTDIR\=
+compiling buffer.c
+compiling buffer_class.c
+compiling extension_value_class.c
+compiling factory_class.c
+compiling packer.c
+compiling packer_class.c
+compiling packer_ext_registry.c
+compiling rbinit.c
+compiling rmem.c
+compiling unpacker.c
+compiling unpacker_class.c
+compiling unpacker_ext_registry.c
+linking shared-object msgpack/msgpack.so
+
+current directory: /home/yohann/tests/ruby-challenge/vendor/ruby/ruby/3.0.0/gems/msgpack-1.5.1/ext/msgpack
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 msgpack.so ./.gem.20220525-317022-yybt7/msgpack
