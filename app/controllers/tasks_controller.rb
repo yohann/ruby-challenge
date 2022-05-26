@@ -1,7 +1,8 @@
 class TasksController < ApplicationController
   before_action :find_action
   def index
-    render json: Task.all, status: :ok
+    @tasks = Task.page(params[:page]).per(params[:per_page])
+    render json: @tasks, status: :ok
   end
 
   def create
