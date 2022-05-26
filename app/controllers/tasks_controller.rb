@@ -1,7 +1,7 @@
 class TasksController < ApplicationController
   before_action :find_action
   def index
-    @tasks = Task.page(params[:page]).per(params[:per_page])
+    @tasks = Task.where(filter_params).page(params[:page] || 1).per(params[:per_page] || 10)
     render json: @tasks, status: :ok
   end
 
@@ -35,6 +35,11 @@ class TasksController < ApplicationController
 
   def task_params
     params.require(:task).permit(:title, :archived, :status)
+  end
+  
+  def filter_params
+    defaults = { archived: false }
+    params.permit(:title, :archived, :status).reverse_merge(defaults)
   end
 
   def find_action
