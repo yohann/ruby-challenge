@@ -43,6 +43,10 @@ class TasksController < ApplicationController
   end
 
   def find_action
-    @task = Task.find_by(id: params[:id])
+    begin
+      @task = Task.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      head :not_found
+    end 
   end
 end
