@@ -1,7 +1,5 @@
 # B2B STACK - Developer Ruby Backend
 
-Fork this repository, complete challenge, submit pull request and provide product preview URL.
-
 <br />
 
 ## Project Guidelines
@@ -10,32 +8,68 @@ Provide API documentation
 
 <br />
 
-## Product Specifications
-The API must have the following features:
-* Create an item
-* Remove an item
-* Archive an item
-* Mark an item as read
-* Mark an item as executed
-* List items according to their status
-* Pagination
+## Dependencies
+The API must have
+  - Ruby 3.0.0
+  - Rails 7.0.3
+  - PostgreSQL 12.10
 
 <br />
 
-## Technical Guidelines
-* ROR
-* MySQL or PostgreSQL
-* REST
-* JSON
+## Installation
+### Instal gems
+```
+bundle install
+```
 
-<br />
+### Create database
+```
+bundle exec rails db:create
+bundle exec rails db:schema:load
+```
 
-## About the documentation
-At this stage of the selection process we want the decisions behind the code, so it is essential that the README has some information that understands your solution.
+## API Endpoints
+### List tasks
+`GET /tasks`
+Parameters:
+- `page` page number
+- `per_page` number of items per page
+- `status` filter by status
+  - Values: 
+    - `created`
+    - `read`
+    - `executed`
+- `archived` true or false (will not return archived tasks unless is set to `true`)
+Example:
+```
+http://localhost:3000/tasks?page=1&per_page=10&status=created
+```
 
-<br />
 
-## Some hints of what we expect to see are:
-Basic instructions on how to run the project;
-Details about your solution, we would like to know what was your rationale in the decisions;
-In case something is not clear and you need to recognize some premise, which means it motivated you to make decisions.
+### Create tasks
+```
+POST /tasks
+{
+    "task": {
+        "title": #task title
+    }   
+}
+```
+
+### Update tasks
+```
+PATCH /tasks/{#id}
+{
+    "task": {
+        "status": # status (created, read or executed)
+        "archived": # true or false
+    }   
+}
+```
+May return HTTP status 404 when task with id could not be found
+
+### Delete tasks
+```
+DELETE /tasks/{#id}
+```
+May return HTTP status 404 when task with id could not be found
